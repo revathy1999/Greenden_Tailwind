@@ -8,25 +8,31 @@
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
     />
+     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
     <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
       <h1 class="text-2xl">Greenden</h1>
-      <svg xmlns="http://www.w3.org/2000/svg"  fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 w-6 h-6 md:hidden">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-</svg>
-
-      <ul class="flex gap-5 text-grey-600 hidden md:flex">
+     
+<div class="flex gap-6">
+      <ul class="flex gap-10 text-grey-600 hidden md:flex">
         <li>
           <a class="hover:underline hover: text-black" href="index.html">Home</a>
-        </li>
-        <li>
-          <a class="hover:underline hover: text-black" href="#">Products</a>
         </li>
         <li>
           <a class="hover:underline hover: text-black" href="contact.html">Contact</a>
         </li>
       </ul>
+       <svg xmlns="http://www.w3.org/2000/svg"  fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 w-6 h-6 md:hidden">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+</svg>
+      <div class=" group relative">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 w-8 cursor-pointer">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+</svg>
+<p class="hidden group-hover:block absolute top-full -right-3 mt-2 rounded shadow border bg-white p-4">your cart is empty!</p>
+</div>
+</div>
     </nav>
 <section class="text-center">
     <h1 class="font-bold text-2xl mt-10">Our Products</h1>
@@ -34,46 +40,80 @@
    
         <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-10 mt-5 p-5">
             <div>
- <img src="./images/pot3.jpg" class="shadow-xl transform hover:-translate-y-2 transition hover:2s inline" alt="plants">
+ <img src="./images/pot5.jpg" class="shadow-xl transform hover:-translate-y-2 transition hover:2s inline" alt="plants">
  <h5>Rose Plant</h5>
- <p>$20</p>
+ <p>$20 <del>$100</del></p>
+ <div class="mt-2">
+ <button class="bg-black text-white rounded p-2 border hover: border-black hover:text-black hover:bg-transparent transition duration-1000">Add to Cart</button>
+ <button class="bg-black text-white rounded p-2 border hover: border-black hover:text-black hover:bg-transparent transition duration-1000">Buy Now</button>
+ </div>
+            </div>
+              <div>
+ <img src="./images/pot4.jpg" class="shadow-xl transform hover:-translate-y-2 transition hover:2s inline" alt="plants">
+ <h5>Aloe vera Plant</h5>
+ <p>$10 <del>$50</del></p>
+ <div class="mt-2">
+ <button class="bg-black text-white rounded p-2 border hover: border-black hover:text-black hover:bg-transparent transition duration-1000">Add to Cart</button>
+ <button class="bg-black text-white rounded p-2 border hover: border-black hover:text-black hover:bg-transparent transition duration-1000">Buy Now</button>
+ </div>
             </div>
               <div>
  <img src="./images/pot3.jpg" class="shadow-xl transform hover:-translate-y-2 transition hover:2s inline" alt="plants">
- <h5>Rose Plant</h5>
- <p>$20</p>
+ <h5>Hibiscus Plant</h5>
+ <p>$70 <del>$120</del></p>
+ <div class="mt-2">
+ <button class="bg-black text-white rounded p-2 border hover: border-black hover:text-black hover:bg-transparent transition duration-1000">Add to Cart</button>
+ <button class="bg-black text-white rounded p-2 border hover: border-black hover:text-black hover:bg-transparent transition duration-1000">Buy Now</button>
+ </div>
             </div>
               <div>
- <img src="./images/pot3.jpg" class="shadow-xl transform hover:-translate-y-2 transition hover:2s inline" alt="plants">
- <h5>Rose Plant</h5>
- <p>$20</p>
-            </div>
-              <div>
- <img src="./images/pot3.jpg" class="shadow-xl transform hover:-translate-y-2 transition hover:2s inline" alt="plants">
- <h5>Rose Plant</h5>
- <p>$20</p>
+ <img src="./images/pot2.jpg" class="shadow-xl transform hover:-translate-y-2 transition hover:2s inline" alt="plants">
+ <h5>Sunflower Plant</h5>
+ <p>$100 <del>$150</del></p>
+ <div class="mt-2">
+ <button class="bg-black text-white rounded p-2 border hover: border-black hover:text-black hover:bg-transparent transition duration-1000">Add to Cart</button>
+ <button class="bg-black text-white rounded p-2 border hover: border-black hover:text-black hover:bg-transparent transition duration-1000">Buy Now</button>
+ </div>
             </div>
             <div>
- <img src="./images/pot3.jpg" class="shadow-xl transform hover:-translate-y-2 transition hover:2s inline" alt="plants">
- <h5>Rose Plant</h5>
- <p>$20</p>
+ <img src="./images/pot6.jpg" class="shadow-xl transform hover:-translate-y-2 transition hover:2s inline" alt="plants">
+ <h5>Mango Plant</h5>
+ <p>$50 <del>$80</del></p>
+ <div class="mt-2">
+ <button class="bg-black text-white rounded p-2 border hover: border-black hover:text-black hover:bg-transparent transition duration-1000">Add to Cart</button>
+ <button class="bg-black text-white rounded p-2 border hover: border-black hover:text-black hover:bg-transparent transition duration-1000">Buy Now</button>
+ </div>
             </div>
               <div>
- <img src="./images/pot3.jpg" class="shadow-xl transform hover:-translate-y-2 transition hover:2s inline" alt="plants">
- <h5>Rose Plant</h5>
- <p>$20</p>
+ <img src="./images/pot7.jpg" class="shadow-xl transform hover:-translate-y-2 transition hover:2s inline" alt="plants">
+ <h5>Tulsi Plant</h5>
+ <p>$10 <del>$30</del></p>
+ <div class="mt-2">
+ <button class="bg-black text-white rounded p-2 border hover: border-black hover:text-black hover:bg-transparent transition duration-1000">Add to Cart</button>
+ <button class="bg-black text-white rounded p-2 border hover: border-black hover:text-black hover:bg-transparent transition duration-1000">Buy Now</button>
+ </div>
             </div>
               <div>
- <img src="./images/pot3.jpg" class="shadow-xl transform hover:-translate-y-2 transition hover:2s inline" alt="plants">
- <h5>Rose Plant</h5>
- <p>$20</p>
+ <img src="./images/pot8.jpg" class="shadow-xl transform hover:-translate-y-2 transition hover:2s inline" alt="plants">
+ <h5>Show Plant</h5>
+ <p>$90 <del>$140</del></p>
+ <div class="mt-2">
+ <button class="bg-black text-white rounded p-2 border hover: border-black hover:text-black hover:bg-transparent transition duration-1000">Add to Cart</button>
+ <button class="bg-black text-white rounded p-2 border hover: border-black hover:text-black hover:bg-transparent transition duration-1000">Buy Now</button>
+ </div>
             </div>
               <div>
- <img src="./images/pot3.jpg" class="shadow-xl transform hover:-translate-y-2 transition hover:2s inline" alt="plants">
- <h5>Rose Plant</h5>
- <p>$20</p>
+ <img src="./images/plant.jpg" class="shadow-xl transform hover:-translate-y-2 transition hover:2s inline" alt="plants">
+ <h5>Snake Plant</h5>
+ <p>$80 <del>$100</del></p>
+ <div class="mt-2">
+ <button class="bg-black text-white rounded p-2 border hover: border-black hover:text-black hover:bg-transparent transition duration-1000">Add to Cart</button>
+ <button class="bg-black text-white rounded p-2 border hover: border-black hover:text-black hover:bg-transparent transition duration-1000">Buy Now</button>
+ 
+ </div>
             </div>
         </div>
+        
 </section>
 </body>
 </html>
