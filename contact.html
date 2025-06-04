@@ -21,6 +21,7 @@
         stroke-width="1.5"
         stroke="currentColor"
         class="size-6 w-6 h-6 md:hidden"
+        id="menuicon"
       >
         <path
           stroke-linecap="round"
@@ -38,6 +39,28 @@
         </li>
       </ul>
     </nav>
+    <!-- side navbar -->
+     <div class="side-navbar w-1/2 h-screen gap-5 text-grey-600 bg-green-100 fixed left-0 top-0 z-20 transition-all duration-1000" style="left:-50%">
+      <div class="text-right">
+        <p id="close-navbar" class="p-3 cursor-pointer">X</p>
+      </div>
+
+      <ul class="flex flex-col gap-10 items-center">
+        <li>
+          <a class="hover:underline hover: text-black" href="index.html">Home</a>
+        </li>
+        <li>
+          <a class="hover:underline hover: text-black" href="products.html"
+            >Products</a
+          >
+        </li>
+        <li>
+          <a class="hover:underline hover: text-black" href="contact.html"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </div>
     <!-- Readymade contact form -->
      <div class="p-4 mx-auto max-w-xl bg-white">
       <h1 class="text-2xl text-slate-900 font-semibold text-center">Contact us</h1>
@@ -66,6 +89,6 @@
           class="!mt-8 text-white bg-slate-900 bg-black hover:bg-slate-800 tracking-wide text-[15px] px-4 py-2 w-full outline-0 cursor-pointer">Send</button>
       </form>
     </div>
-    
+    <script src="contact.js"></script>
 </body>
 </html>
